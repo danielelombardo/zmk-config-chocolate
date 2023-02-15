@@ -1,0 +1,5 @@
+config SHIELD_CHOCOLATE_LEFT
+	def_bool $(shields_list_contains,chocolate_left)
+
+config SHIELD_CHOCOLATE_RIGHT
+	def_bool $(shields_list_contains,chocolate_right)

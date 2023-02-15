@@ -1,0 +1,22 @@
+config ZMK_BLE
+	default y
+
+config ZMK_USB
+	default y
+
+if SHIELD_CHOCOLATE_LEFT
+
+config ZMK_SPLIT_BLE_ROLE_CENTRAL
+	default y
+
+endif # SHIELD_CHOCOLATE_LEFT
+
+if SHIELD_CHOCOLATE_LEFT || SHIELD_CHOCOLATE_RIGHT
+
+config ZMK_KEYBOARD_NAME
+	default "_chocolate"
+
+config ZMK_SPLIT
+	default y
+
+endif # SHIELD_CHOCOLATE_LEFT || SHIELD_CHOCOLATE_RIGHT

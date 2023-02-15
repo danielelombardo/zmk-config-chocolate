@@ -1,0 +1,10 @@
+file_format: "1"
+id: chocolate
+name: _chocolate
+type: shield
+requires: [pro_micro]
+features:
+  - keys
+siblings:
+  - chocolate_left
+  - chocolate_right
