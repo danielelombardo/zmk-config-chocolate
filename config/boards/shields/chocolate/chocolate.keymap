@@ -85,17 +85,17 @@
             bindings = <
                             &hm LALT W  &hm LSHFT E  &hm LCTL R  &kp T    &kp Y  &hm RCTL U  &hm RSHFT I  &hm RALT O 
                 &hm LGUI A  &kp S       &kp D        &kp F       &kp Q    &kp G  &kp H       &kp N        &kp L     &hm RGUI P 
-                &kp Z       &kp X       &kp C        &kp V                       &kp B       &kp J        &kp K     &kp M 
+                &kp X       &kp C       &kp Z        &kp V                       &kp B       &kp J        &kp K     &kp M 
                                                                  &mg 1 1  &mkp 3 SPACE 
             >;
         };
 
         nav {
             bindings = <
-                           &kt LALT   &kt LSHFT  &kt LCTRL  &rls_mods   &kp PG_UP  &kp HOME  &kp UP    &kp END  
-                &kp ENTER  &kp TAB    &kp LC(C)  &kp LC(V)  &caps_word  &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT   &kp BKSP 
-                &kp ESC    &kp LC(X)  &kp LC(Z)  &kp LC(Y)                         &kp INS   ARCHIVE   &kp LA(F4)  &kp DEL 
-                                                            &tog 2      abc_shft
+                           &kt LALT   &kt LSHFT  &kt LCTRL  &rls_mods   &kp PG_UP  &kp HOME  &kp UP      &kp END  
+                &kp ENTER  &kp TAB    &kp LC(C)  &kp LC(V)  &caps_word  &kp PG_DN  &kp LEFT  &kp DOWN    &kp RIGHT  &kp BKSP 
+                &kp ESC    &kp LC(X)  &kp LC(Z)  &kp LC(Y)                         &kp INS   &kp LA(F4)  ARCHIVE    &kp DEL 
+                                                            &mg 2 2     abc_shft
             >;
         };
     
