@@ -92,9 +92,9 @@
 
         nav {
             bindings = <
-                           &kt LALT   &kt LSHFT  &kt LCTRL  &rls_mods   &kp PG_UP &kp HOME  &kp UP    &kp END  
-                &kp ENTER  &kp TAB    &kp LC(C)  &kp LC(V)  &caps_word  &kp PG_DN &kp LEFT  &kp DOWN  &kp RIGHT   &kp BKSP 
-                &kp ESC    &kp LC(X)  &kp LC(Z)  &kp LC(Y)                        &kp INS   ARCHIVE   &kp LA(F4)  &kp DEL 
+                           &kt LALT   &kt LSHFT  &kt LCTRL  &rls_mods   &kp PG_UP  &kp HOME  &kp UP    &kp END  
+                &kp ENTER  &kp TAB    &kp LC(C)  &kp LC(V)  &caps_word  &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT   &kp BKSP 
+                &kp ESC    &kp LC(X)  &kp LC(Z)  &kp LC(Y)                         &kp INS   ARCHIVE   &kp LA(F4)  &kp DEL 
                                                             &tog 2      abc_shft
             >;
         };
@@ -112,8 +112,8 @@
             bindings = <
                           &hm LALT SEMI  &hm LSHFT COMMA  &hm LCTL DOT  &bt BT_NXT      &none  &hm RCTL MINUS  &hm RSHFT SQT  &hm RALT EQUAL
                 &kp LBKT  &kp C_MUTE     &kp C_VOL_UP     &kp C_VOL_DN  &bt BT_CLR      &none  &kp C_BRI_UP    &kp C_BRI_DN   &kp BSLH      &kp SLASH  
-                &kp RBKT  &none          &none            &none         &none           &none  &none           &none          &kp GRAVE     &none
-                                                                        &mrl LCTL 0     abc_shft
+                &kp RBKT  &none          &none            &none                                &none           &none          &kp GRAVE     &none
+                                                                        &to 0           abc_shft
             >;
         };
     };
