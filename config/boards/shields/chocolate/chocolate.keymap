@@ -4,7 +4,6 @@
 
 #define abc_shft &mrl RSHIFT 0
 #define ARCHIVE &kp LC(LS(N1))
-#define TEAMSMUTE &kp LC(LS(M))
 
 &caps_word {
     continue-list = <MINUS UNDERSCORE BKSP DEL LEFT RIGHT>;
@@ -17,7 +16,7 @@
             label = "MOM_TOGGLE_LAYERS";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <300>;
+            tapping-term-ms = <250>;
             bindings = <&mo>, <&tog>;
         };
         mrl: mod_reset_layers {
@@ -25,7 +24,7 @@
             label = "MOD_RESET_LAYERS";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <300>;
+            tapping-term-ms = <250>;
             bindings = <&kp>, <&to>;
         };
         mkp: mom_key_press {
@@ -33,7 +32,7 @@
             label = "MOM_KEY_PRESS";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <300>;
+            tapping-term-ms = <250>;
             quick-tap-ms = <200>;
             global-quick-tap;
             bindings = <&mo>, <&kp>;
@@ -43,7 +42,7 @@
             label = "HOME_MOD";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <300>;
+            tapping-term-ms = <250>;
             quick-tap-ms = <200>;
             global-quick-tap;
             bindings = <&kp>, <&kp>;
@@ -67,10 +66,10 @@
             bindings = <&kp BKSP>;
             layers = <0>;
         };
-        combo_enter {
-            timeout-ms = <70>;
-            key-positions = <0 1>;
-            bindings = <&kp ENTER>;
+        combo_num {
+            timeout-ms = <90>;
+            key-positions = <26 27>;
+            bindings = <&mo 2>;
             layers = <0>;
         };
     };
@@ -92,9 +91,9 @@
 
         nav {
             bindings = <
-                           &kt LALT   &kt LSHFT  &kt LCTRL  &rls_mods   &kp PG_UP  &kp HOME  &kp UP      &kp END  
-                &kp ENTER  &kp TAB    &kp LC(C)  &kp LC(V)  &caps_word  &kp PG_DN  &kp LEFT  &kp DOWN    &kp RIGHT  &kp BKSP 
-                &kp ESC    &kp LC(X)  &kp LC(Z)  &kp LC(Y)                         &kp INS   &kp LA(F4)  ARCHIVE    &kp DEL 
+                                &kt LALT   &kt LSHFT  &kt LCTRL  &rls_mods   &kp PG_UP  &kp HOME  &kp UP      &kp END  
+                &hm LGUI ENTER  &kp TAB    &kp LC(C)  &kp LC(V)  &caps_word  &kp PG_DN  &kp LEFT  &kp DOWN    &kp RIGHT  &kp BKSP 
+                &kp ESC         &kp LC(X)  &kp LC(Z)  &kp LC(Y)                         &kp INS   &kp LA(F4)  ARCHIVE    &kp DEL 
                                                             &mg 2 2     abc_shft
             >;
         };
@@ -110,10 +109,10 @@
     
         sym {
             bindings = <
-                          &hm LALT SEMI  &hm LSHFT COMMA  &hm LCTL DOT  &bt BT_NXT      &none  &hm RCTL MINUS  &hm RSHFT SQT  &hm RALT EQUAL
-                &kp LBKT  &kp C_MUTE     &kp C_VOL_UP     &kp C_VOL_DN  &bt BT_CLR      &none  &kp C_BRI_UP    &kp C_BRI_DN   &kp BSLH      &kp SLASH  
-                &kp RBKT  &none          &none            &none                                &none           &none          &kp GRAVE     &none
-                                                                        &to 0           abc_shft
+                          &hm LALT SEMI  &hm LSHFT COMMA  &hm LCTL DOT  &none   &none  &hm RCTL MINUS  &hm RSHFT SQT  &hm RALT EQUAL
+                &kp LBKT  &kp C_MUTE     &kp C_VOL_DN     &kp C_VOL_UP  &none   &none  &kp C_BRI_UP    &kp C_BRI_DN   &kp GRAVE  &kp SLASH  
+                &kp RBKT  &none          &bt BT_NXT       &bt BT_CLR                   &none           &none          &none      &kp BSLH 
+                                                                        &to 0   abc_shft
             >;
         };
     };
