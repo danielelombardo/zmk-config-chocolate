@@ -62,21 +62,14 @@
     };
     combos {
         compatible = "zmk,combos";
-        combo_backspace {
-            timeout-ms = <70>;
-            key-positions = <6 7>;
-            bindings = <&kp BKSP>;
-            layers = <0>;
-        };
-        combo_num {
+        combo_rls_mods {
             timeout-ms = <90>;
-            key-positions = <26 27>;
-            bindings = <&mo 2>;
-            layers = <0>;
+            key-positions = <10 11>;
+            bindings = <&rls_mods>;
         };
         combo_capsword {
             timeout-ms = <90>;
-            key-positions = <11 14>;
+            key-positions = <14 15>;
             bindings = <&caps_word>;
             layers = <0>;
         };
@@ -111,10 +104,10 @@
 
         nav {
             bindings = <
-                                KT(LALT)   KT(LSHFT)  KT(LCTRL)  &rls_mods   &kp PG_UP  &kp HOME  &kp UP      &kp END  
-                &hm LGUI ENTER  &kp ESC    &kp LC(C)  &kp LC(V)  &kp CAPS    &kp PG_DN  &kp LEFT  &kp DOWN    &kp RIGHT  &kp BKSP 
-                &kp TAB         &kp LC(X)  &kp LC(Z)  &kp LC(Y)                         &kp INS   &kp LA(F4)  ARCHIVE    &kp DEL 
-                                                                 &mto 2 2    &to 0
+                                &kp TAB    KT(LALT)   KT(LCTRL)  &kp PG_UP   &kp PG_DN  &kp HOME  &kp UP      &kp END  
+                &hm LGUI ENTER  KT(LSHFT)  &kp LC(C)  &kp LC(V)  &kp CAPS    &none      &kp LEFT  &kp DOWN    &kp RIGHT  &kp BKSP 
+                &kp ESC         &kp LC(Z)  &kp LC(Y)  &kp LC(X)                         &kp INS   &kp LA(F4)  ARCHIVE    &kp DEL 
+                                                                 &mto 2 2    &mto 2 0
             >;
         };
     
