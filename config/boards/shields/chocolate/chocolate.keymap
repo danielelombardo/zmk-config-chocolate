@@ -62,17 +62,6 @@
     };
     combos {
         compatible = "zmk,combos";
-        combo_rls_mods {
-            timeout-ms = <90>;
-            key-positions = <10 11>;
-            bindings = <&rls_mods>;
-        };
-        combo_capsword {
-            timeout-ms = <90>;
-            key-positions = <14 15>;
-            bindings = <&caps_word>;
-            layers = <0>;
-        };
         combo_bluetooth_next {
             timeout-ms = <90>;
             key-positions = <19 20 21>;
@@ -105,9 +94,9 @@
         nav {
             bindings = <
                                 &kp TAB    KT(LALT)   KT(LCTRL)  &kp PG_UP   &kp PG_DN  &kp HOME  &kp UP      &kp END  
-                &hm LGUI ENTER  KT(LSHFT)  &kp LC(C)  &kp LC(V)  &kp CAPS    &none      &kp LEFT  &kp DOWN    &kp RIGHT  &kp BKSP 
+                &hm LGUI ENTER  KT(LSHFT)  &kp LC(C)  &kp LC(V)  &kp CAPS    &kp K_APP  &kp LEFT  &kp DOWN    &kp RIGHT  &kp BKSP 
                 &kp ESC         &kp LC(Z)  &kp LC(Y)  &kp LC(X)                         &kp INS   &kp LA(F4)  ARCHIVE    &kp DEL 
-                                                                 &mto 2 2    &mto 2 0
+                                                                 &mto 2 2    &mto 3 0
             >;
         };
     
@@ -122,10 +111,10 @@
     
         sym {
             bindings = <
-                          &hm LALT SEMI  &hm LSHFT COMMA  &hm LCTL DOT  &none   &kp C_VOL_UP  &hm RCTL MINUS  &hm RSHFT SQT  &hm RALT EQUAL
-                &kp LPAR  &kp LBKT       &kp AT           &kp EXCL      &none   &kp C_VOL_DN  &kp GRAVE       &kp AMPS       &kp STAR    &kp SLASH 
-                &kp RPAR  &kp RBKT       &none            &none                               &kp C_MUTE      &none          &none       &kp BSLH 
-                                                                        &to 0   &to 0
+                          &hm LALT SEMI  &hm LSHFT COMMA  &hm LCTL DOT  &rls_mods   &rls_mods   &hm RCTL MINUS  &hm RSHFT SQT  &hm RALT EQUAL
+                &kp LPAR  &kp LBKT       &kp AT           &kp EXCL      &caps_word  &caps_word  &kp GRAVE       &kp AMPS       &kp STAR       &kp SLASH 
+                &kp RPAR  &kp RBKT       &none            &none                                 &kp C_MUTE      &kp C_VOL_DN   &kp C_VOL_UP   &kp BSLH 
+                                                                        &to 0       &to 0
             >;
         };
     };
