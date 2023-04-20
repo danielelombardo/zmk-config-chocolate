@@ -3,6 +3,7 @@
 #include <dt-bindings/zmk/bt.h>
 
 #define ARCHIVE &kp LC(LS(N1))
+#define APPLAUNCHER &kp LG(TAB)
 #define KT(mod) &hold_tog mod mod
 
 &caps_word {
@@ -60,7 +61,7 @@
             bindings = <&macro_release &kp LSHFT &kp LCTRL &kp LALT &kp LGUI>;
         };
     };
-    combos {
+    combos {    
         compatible = "zmk,combos";
         combo_bluetooth_next {
             timeout-ms = <90>;
@@ -111,9 +112,9 @@
     
         sym {
             bindings = <
-                          &hm LALT SEMI  &hm LSHFT COMMA  &hm LCTL DOT  &rls_mods   &rls_mods   &hm RCTL MINUS  &hm RSHFT SQT  &hm RALT EQUAL
-                &kp LPAR  &kp LBKT       &kp AT           &kp EXCL      &caps_word  &caps_word  &kp GRAVE       &kp AMPS       &kp STAR       &kp SLASH 
-                &kp RPAR  &kp RBKT       &none            &none                                 &kp C_MUTE      &kp C_VOL_DN   &kp C_VOL_UP   &kp BSLH 
+                          &hm LALT SEMI  &hm LSHFT COMMA  &hm LCTL DOT  &rls_mods   &kp C_VOL_UP  &hm RCTL MINUS  &hm RSHFT SQT  &hm RALT EQUAL
+                &kp LPAR  &kp LBKT       &kp AT           &kp EXCL      &caps_word  &kp C_VOL_DN  &kp GRAVE       &kp AMPS       &kp STAR       &kp SLASH 
+                &kp RPAR  &kp RBKT       &none            &none                                   &kp C_MUTE      &none          APPLAUNCHER    &kp BSLH 
                                                                         &to 0       &to 0
             >;
         };
