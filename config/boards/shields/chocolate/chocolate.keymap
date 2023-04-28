@@ -94,18 +94,18 @@
 
         nav {
             bindings = <
-                                &kp TAB    KT(LALT)   KT(LCTRL)  &kp PG_UP   &kp PG_DN  &kp HOME  &kp UP      &kp END  
-                &hm LGUI ENTER  KT(LSHFT)  &kp LC(C)  &kp LC(V)  &kp CAPS    &kp K_APP  &kp LEFT  &kp DOWN    &kp RIGHT  &kp BKSP 
-                &kp ESC         &kp LC(Z)  &kp LC(Y)  &kp LC(X)                         &kp INS   &kp LA(F4)  ARCHIVE    &kp DEL 
-                                                                 &mto 2 2    &mto 3 0
+                              KT(LALT)   KT(LSHFT)  KT(LCTRL)  &kp PG_UP   &kp PG_DN  &kp HOME  &kp UP      &kp END  
+                &hm LGUI TAB  &kp LC(C)  &kp LC(X)  &kp LC(V)  &kp CAPS    &kp K_APP  &kp LEFT  &kp DOWN    &kp RIGHT  &kp BKSP 
+                &kp ESC       &kp LC(Z)  &kp LC(Y)  &kp DEL                           &kp INS   &kp LA(F4)  ARCHIVE    &kp ENTER
+                                                               &mto 2 2    &mto 3 0
             >;
         };
     
         num {
             bindings = <
-                             &hm LALT N3  &hm LSHFT N2  &hm LCTL N1  &kp ENTER   &kp BKSP  &hm RCTL N6  &hm RSHFT N7  &hm RALT N8 
-                &hm LGUI N4  &kp F3       &kp F2        &kp F1       &none       &none     &kp F7       &kp F8        &kp F9     &hm RGUI N9 
-                &kp N5       &kp F6       &kp F5        &kp F4                             &kp F10      &kp F11       &kp F12    &kp N0  
+                             &hm LALT N3  &hm LSHFT N2  &hm LCTL N1  &kp N0      &kp N9    &hm RCTL N6  &hm RSHFT N7  &hm RALT N8 
+                &hm LGUI N4  &kp F3       &kp F2        &kp F1       &none       &none     &kp F7       &kp F8        &kp F9     &hm RGUI BKSP   
+                &kp N5       &kp F6       &kp F5        &kp F4                             &kp F10      &kp F11       &kp F12    &kp ENTER
                                                                      &mto 3 3    &mto 3 0
             >;
         };    
